@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Margravine – Projekt – Feyza Keles</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-body project-detail-body">
+  <div class="page-layout">
+
+    <!-- Sidebar -->
+    <aside class="page-sidebar">
+      <a href="projekte.html" class="sidebar-label">WORK</a>
+      <div class="sidebar-line"></div>
+      <div class="sidebar-bottom">© 2025</div>
+    </aside>
+
+    <!-- rotes Overlay -->
+    <div class="page-transition"></div>
+
+    <!-- Inhalt -->
+    <main class="project-detail-main">
+      <div class="project-detail-inner">
+
+        <!-- 1) HERO – großer beiger Block -->
+        <section class="project-hero fade-up">
+          <div class="project-hero-frame">
+            <span class="project-hero-label">Projekt</span>
+            <h1 class="project-hero-title">Pflanzen-<br>krankheiten-Analyse</h1>
+            <p class="project-hero-subtitle">
+               UI/UX · Mobil.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2) OVERVIEW-TEXT -->
+        <section class="project-overview fade-up">
+          <p class="project-overview-eyebrow">
+            Website design and development for Margravine – eine Talentagentur
+            für Creator, gegründet von Caspar Lee &amp; Joe Sugg.
+          </p>
+          <p class="project-overview-text">
+            Für dieses Projekt habe ich eine modulare Website gestaltet, die sowohl
+            auf Desktop als auch Mobile sehr visuell funktioniert. Die Seite ist
+            komplett im CMS pflegbar, inklusive individueller Farben für einzelne
+            Talent-Seiten.
+          </p>
+        </section>
+
+        <!-- 3) META-SECTION – Role / Responsibilities / URL -->
+        <section class="project-meta-section fade-up">
+          <div class="project-meta-intro">
+            <p>
+              Talented designer and friend XY hat mich gebeten, das Webdesign
+              und die Entwicklung für Margravine zu übernehmen. Gemeinsam haben
+              wir ein flexibles System aus Komponenten aufgebaut, mit dem das
+              Team neue Seiten sehr schnell im CMS aufbauen kann.
+            </p>
+          </div>
+
+          <div class="project-meta-grid">
+            <div class="project-meta-column">
+              <h2 class="project-meta-heading">Role</h2>
+              <p class="project-meta-text">
+                Visual &amp; Web Designerin<br />
+                Webflow / Framer Development
+              </p>
+            </div>
+
+            <div class="project-meta-column">
+              <h2 class="project-meta-heading">Responsibilities</h2>
+              <p class="project-meta-text">
+                Konzept &amp; Wireframes<br />
+                Visual Design &amp; Layout<br />
+                Komponenten &amp; Design System<br />
+                Webflow Setup &amp; Animationen<br />
+                Übergabe &amp; CMS-Schulung
+              </p>
+            </div>
+
+            <div class="project-meta-column">
+              <h2 class="project-meta-heading">URL</h2>
+              <p class="project-meta-text">
+                <a
+                  href="https://www.margravine.com"
+                  target="_blank"
+                  class="project-meta-link"
+                >
+                  www.margravine.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4) WEITERE SCREENS (breites Bild direkt darunter) -->
+        <section class="project-wide-image fade-up">
+          <img
+            src="bild1.png"
+            alt="Weitere Margravine Screens"
+          />
+        </section>
+
+        <!-- 5) QUOTE -->
+        <section class="project-quote-section fade-up">
+          <p class="project-quote">
+            Overall, I feel really happy with how the vision I had at the beginning
+            of the project came to life in the end as I'd hoped.
+          </p>
+        </section>
+
+        <!-- 6) GROSSES DESKTOP-BILD -->
+        <section class="project-wide-image fade-up">
+          <img
+            src="images/margravine-desktop-1.jpg"
+            alt="Margravine Desktop Layout"
+          />
+        </section>
+
+        <!-- 7) MOBILE GALLERY + CTA (ganz unten) -->
+        <section class="project-gallery fade-up">
+          <p class="project-gallery-label">
+            And it looks great on mobile too.
+          </p>
+
+          <div class="project-gallery-track">
+            <article class="project-card project-card-1">
+              <img
+                src="images/margravine-phone-1.jpg"
+                alt="Margravine Mobile Screen 1"
+              />
+            </article>
+            <article class="project-card project-card-2">
+              <img
+                src="images/margravine-phone-2.jpg"
+                alt="Margravine Mobile Screen 2"
+              />
+            </article>
+            <article class="project-card project-card-3">
+              <img
+                src="images/margravine-phone-3.jpg"
+                alt="Margravine Mobile Screen 3"
+              />
+            </article>
+            <article class="project-card project-card-4">
+              <img
+                src="images/margravine-phone-4.jpg"
+                alt="Margravine Mobile Screen 4"
+              />
+            </article>
+          </div>
+
+          <a
+            href="https://www.margravine.com"
+            target="_blank"
+            class="project-cta"
+          >
+            <span>Check it out</span>
+            <span class="project-cta-arrow">→</span>
+          </a>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Fade-up Animation
+      const elements = document.querySelectorAll(".fade-up");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("in-view");
+        });
+      }, { threshold: 0.1 });
+      elements.forEach((el) => observer.observe(el));
+
+      // Rotes Overlay für Seitenwechsel
+      const transition = document.querySelector(".page-transition");
+      const links = document.querySelectorAll("a[href]");
+
+      links.forEach((link) => {
+        const href = link.getAttribute("href");
+        if (
+          !href ||
+          href.startsWith("http") ||
+          href.startsWith("#") ||
+          link.target === "_blank"
+        ) {
+          return;
+        }
+
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          transition.classList.add("active");
+          setTimeout(() => {
+            window.location.href = href;
+          }, 300);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
